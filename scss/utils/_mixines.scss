@@ -1,0 +1,25 @@
+@mixin coeurfa {
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    background-image: $bgcolor;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  @mixin titleh2 {
+    font-size: 25px;
+    margin: 10px;
+  }
+  
+  @mixin  sectionbox {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 1%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px $couleurshadow;
+    transition: background-color 500ms ease;
+  }
