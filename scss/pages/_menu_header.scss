@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    @media screen and (min-width: map-get($breakpointmenu, desktop)){
+        height: auto;
+    }
+    .header_return {
+        padding-left: 10px;
+    }
+    i {
+        font-size: 25px;
+        @media screen and (min-width: map-get($breakpointmenu, desktop)){
+            font-size: 35px;
+        }
+    }
+    a:visited {
+        color: black;
+    }
+    .logo {
+        width: 35%;
+        margin: auto;
+        -o-object-fit: cover;
+           object-fit: cover;
+        padding-top: 4px;
+        @media screen and (min-width: map-get($breakpointmenu, desktop)){
+            width: auto;
+        }
+    }
+}
+
+.bg {
+    height: 260px;
+    img {
+    width: 100%;
+    margin-top: 10px;
+    height: 120%;
+    -o-object-fit: cover;
+       object-fit: cover;
+       @media screen and (min-width: map-get($breakpointmenu, desktop)){
+        height: 140%;
+       }
+    }
+}
