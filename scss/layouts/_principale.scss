@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  @media screen and (min-width: map-get($breakpointmenu, desktop)){
+      height: auto;
+  } 
+  .logo {
+    width: 35%;
+    margin: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 4px;
+    @media screen and (min-width: map-get($breakpointmenu, desktop)){
+        width: auto;
+    }
+  }
+}

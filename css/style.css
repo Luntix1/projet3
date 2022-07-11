@@ -1,3 +1,46 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#nav_btn {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: none;
+  margin: auto;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 5px 5px 10px #cecece;
+}
+#nav_btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.btn_menu {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 5px 5px 10px #cecece;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  margin: auto;
+  margin-top: 20px;
+}
+.btn_menu:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
 @-webkit-keyframes reversespin {
   0% {
     transform: rotate(0deg);
@@ -30,29 +73,6 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes opacite {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes opacite {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-body {
-  font-family: "Roboto", sans-serif;
-  min-width: 400px;
-  margin: auto;
-  max-width: 1600px;
-}
-
 .container {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   position: fixed;
@@ -105,14 +125,36 @@ body {
   animation: spin 2000ms linear infinite forwards;
 }
 
-.principal {
-  display: flex;
-  justify-content: center;
-  height: 75px;
+body {
+  font-family: "Roboto", sans-serif;
+  min-width: 400px;
+  margin: auto;
+  max-width: 1600px;
 }
-.principal #logo_img {
-  height: 45px;
-  padding: 15px;
+
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 991px) {
+  header {
+    height: auto;
+  }
+}
+header .logo {
+  width: 35%;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding-top: 4px;
+}
+@media screen and (min-width: 991px) {
+  header .logo {
+    width: auto;
+  }
 }
 
 nav {
@@ -133,7 +175,6 @@ nav .nav_p {
   font-size: 20px;
   font-weight: 400;
   padding-left: 35px;
-  margin-right: 50px;
 }
 nav .nav_intro {
   background-color: rgb(245, 245, 245);
@@ -150,21 +191,6 @@ nav h2 {
 nav p {
   font-size: 17px;
   font-weight: 100;
-}
-nav #nav_btn {
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
-  border: none;
-  margin: auto;
-  padding: 15px;
-  font-size: 18px;
-  border-radius: 50px;
-  color: white;
-  box-shadow: 5px 5px 10px #cecece;
-}
-nav #nav_btn:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  transform: scale(1.1);
 }
 
 section {
@@ -225,7 +251,7 @@ section .section_number {
   text-align: center;
   font-size: 14px;
   padding-top: 5px;
-  height: 20px;
+  height: 25px;
   width: 25px;
   border-radius: 50%;
 }
@@ -269,6 +295,22 @@ section .resto_p {
   padding-left: 25px;
 }
 
+@-webkit-keyframes opacite {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacite {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 article {
   background-color: rgb(245, 245, 245);
   position: relative;
@@ -368,11 +410,11 @@ article .resto_description {
     display: block;
   }
 }
-article h3 {
+article .resto_h {
   font-size: 20px;
   margin-top: 12px;
 }
-article p {
+article .resto_p {
   font-size: 18px;
 }
 article .resto_coeur2 {
@@ -401,43 +443,37 @@ article i {
   position: absolute;
 }
 
-/*menu*/
-@-webkit-keyframes turn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 5px;
 }
-@keyframes turn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  padding-left: 50px;
 }
-@-webkit-keyframes upcart {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+footer .footli {
+  margin-left: 25px;
 }
-@keyframes upcart {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+footer ul {
+  list-style-type: none;
 }
+footer li {
+  padding: 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer i {
+  padding-right: 5px;
+}
+
 header {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 60px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -489,6 +525,54 @@ header .logo {
   }
 }
 
+@-webkit-keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes upcart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes upcart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacite {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacite {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .menu {
   position: relative;
   background-color: rgb(245, 245, 245);
@@ -575,7 +659,7 @@ header .logo {
   margin: 10px;
   padding: 10px;
   cursor: pointer;
-  height: 55px;
+  height: 70px;
   overflow: hidden;
 }
 .menu .menu_box--plat.p1 {
@@ -598,8 +682,8 @@ header .logo {
   margin-right: 88px;
 }
 .menu .menu_box--plat:hover .fa-circle-check {
-  -webkit-animation: turn 1000ms;
-  animation: turn 1000ms;
+  -webkit-animation: turn 750ms;
+  animation: turn 750ms;
 }
 .menu .liste {
   margin-left: 5px;
@@ -626,7 +710,7 @@ header .logo {
   display: flex;
   align-items: end;
   transform: translateX(100px);
-  transition: 1s;
+  transition: 750ms;
 }
 .menu .prix {
   margin-right: 25px;
@@ -643,51 +727,4 @@ header .logo {
   font-size: 25px;
   background-color: #99E2D0;
   height: 80px;
-}
-.menu .btn_menu {
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
-  padding: 15px;
-  font-size: 18px;
-  border-radius: 50px;
-  color: white;
-  box-shadow: 5px 5px 10px #cecece;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20px;
-  width: 180px;
-  margin: auto;
-  margin-top: 20px;
-}
-.menu .btn_menu:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  transform: scale(1.1);
-}
-
-footer {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 5px;
-}
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-  padding-left: 50px;
-}
-footer .footli {
-  margin-left: 25px;
-}
-footer ul {
-  list-style-type: none;
-}
-footer li {
-  padding: 10px;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-}
-footer i {
-  padding-right: 5px;
 }/*# sourceMappingURL=style.css.map */

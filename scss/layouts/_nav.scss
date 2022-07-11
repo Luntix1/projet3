@@ -1,0 +1,35 @@
+nav {
+    display: block;
+    .nav_localisation {
+      display: flex;
+      background-color: #ececec;
+      justify-content: center;
+      box-shadow: inset 5px 8px 10px -5px $couleurshadow;
+    }
+    .nav_icon {
+      align-items: center;
+      right: 50px;
+      display: flex;
+    
+    }
+    .nav_p {
+      font-size: 20px;
+      font-weight: 400;
+      padding-left: 35px;
+    }
+    .nav_intro {
+      background-color: $bgsmoke;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    h2 {
+      @include titleh2;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 100;
+    }
+}
