@@ -12,12 +12,13 @@
   font-size: 18px;
   border-radius: 50px;
   color: white;
-  box-shadow: 5px 5px 10px #cecece;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 #nav_btn:hover {
   cursor: pointer;
   opacity: 0.8;
   transform: scale(1.1);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
 }
 
 .btn_menu {
@@ -26,7 +27,7 @@
   font-size: 18px;
   border-radius: 50px;
   color: white;
-  box-shadow: 5px 5px 10px #cecece;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +40,7 @@
   cursor: pointer;
   opacity: 0.8;
   transform: scale(1.1);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
 }
 
 @-webkit-keyframes reversespin {
@@ -55,6 +57,28 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes opaloader {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opaloader {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-webkit-keyframes spin {
@@ -79,8 +103,8 @@
   inset: 0;
   z-index: 2;
   pointer-events: none;
-  -webkit-animation: opacite 5s forwards;
-  animation: opacite 5s forwards;
+  -webkit-animation: opaloader 3s forwards;
+  animation: opaloader 3s forwards;
 }
 .container .loader {
   width: 250px;
@@ -127,7 +151,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 400px;
   margin: auto;
   max-width: 1600px;
 }
@@ -168,7 +191,7 @@ nav .nav_localisation {
   display: flex;
   background-color: #ececec;
   justify-content: center;
-  box-shadow: inset 5px 8px 10px -5px #cecece;
+  box-shadow: inset 5px 8px 10px -5px rgba(0, 0, 0, 0.5);
 }
 nav .nav_icon {
   align-items: center;
@@ -211,12 +234,12 @@ section {
     height: auto;
   }
 }
-section h2 {
+section .h_titre {
   font-size: 25px;
   margin: 10px;
 }
 @media screen and (min-width: 768px) {
-  section h2 {
+  section .h_titre {
     margin-bottom: 2px;
   }
 }
@@ -272,7 +295,7 @@ section .section_box {
   margin-top: 25px;
   margin-left: 1%;
   border-radius: 20px;
-  box-shadow: 2px 2px 10px #cecece;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   transition: background-color 500ms ease;
   background-color: rgb(245, 245, 245);
 }
@@ -288,7 +311,7 @@ section .section_box3 {
   margin-top: 25px;
   margin-left: 1%;
   border-radius: 20px;
-  box-shadow: 2px 2px 10px #cecece;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   transition: background-color 500ms ease;
   background-color: #f5f1fd;
 }
@@ -363,7 +386,7 @@ article .resto_box {
   width: 85%;
   height: 245px;
   background-color: white;
-  box-shadow: 2px 2px 10px #cecece;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   margin: 15px;
   border-radius: 25px;
   position: relative;
@@ -417,9 +440,11 @@ article .resto_description {
 article .resto_h {
   font-size: 20px;
   margin-top: 12px;
+  color: black;
 }
 article .resto_p {
   font-size: 18px;
+  color: black;
 }
 article .resto_coeur2 {
   font-size: 35px;
@@ -445,6 +470,7 @@ article .fa-2:hover {
 }
 article i {
   position: absolute;
+  color: black;
 }
 
 footer {
@@ -600,6 +626,9 @@ header .logo {
   height: 50px;
   margin-bottom: 15px;
 }
+.menu .h_menu {
+  font-size: 30px;
+}
 .menu .resto_coeur {
   font-size: 35px;
   margin-right: 50px;
@@ -632,9 +661,10 @@ header .logo {
 }
 .menu .menu_EPD {
   border-bottom: 3px solid #99E2D0;
-  width: 30px;
+  width: 50px;
   margin: 5px;
   margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 @media screen and (min-width: 991px) {
   .menu .menu_EPD {
@@ -648,12 +678,13 @@ header .logo {
 }
 .menu h2 {
   margin: 0px;
+  font-size: 20px;
 }
 .menu .menu_box--plat {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  box-shadow: 2px 2px 10px #cecece;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   background: white;
   width: 95%;
@@ -689,6 +720,7 @@ header .logo {
 .menu .liste {
   margin-left: 5px;
   overflow: hidden;
+  width: 80%;
 }
 .menu h3 {
   font-size: 19px;

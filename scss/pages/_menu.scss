@@ -72,6 +72,9 @@
         height: 50px;
         margin-bottom: 15px;
     }
+    .h_menu {
+        font-size: 30px;
+    }
     .resto_coeur {
         font-size: 35px;
         margin-right: 50px;
@@ -97,9 +100,10 @@
     }
     .menu_EPD {
         border-bottom: 3px solid $couleurtertiaire;
-        width: 30px;
+        width: 50px;
         margin: 5px;
         margin-bottom: 20px;
+        padding-bottom: 5px;
         @media screen and (min-width: map-get($breakpointmenu, desktop)){
             margin-bottom: 0px; 
          }
@@ -111,6 +115,7 @@
     }
     h2 {
         margin: 0px;
+        font-size: 20px;
     }
     .menu_box--plat {
       display: flex;
@@ -152,6 +157,7 @@
     .liste {
         margin-left: 5px;
         overflow: hidden;
+        width: 80%;
     }
     h3 {
         font-size: 19px;

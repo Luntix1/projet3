@@ -15,7 +15,31 @@
       transform: rotate(-360deg);
     }
 }
-  
+
+@-webkit-keyframes opaloader {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opaloader {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -40,8 +64,8 @@
     inset: 0;
     z-index: 2;
     pointer-events: none;
-    -webkit-animation: opacite 5s forwards;
-            animation: opacite 5s forwards;
+    -webkit-animation: opaloader 3s forwards;
+            animation: opaloader 3s forwards;
     .loader {
       width: 250px;
       height: 250px;
