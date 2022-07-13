@@ -72,7 +72,7 @@
         height: 50px;
         margin-bottom: 15px;
     }
-    .h_menu {
+    .menu_h {
         font-size: 30px;
     }
     .resto_coeur {
@@ -147,7 +147,7 @@
                 animation: upcart 4s;
       }
       &:hover > .check{
-        margin-right: 88px;
+        margin-right: 78px;
       }
       &:hover .fa-circle-check {
         -webkit-animation: turn 750ms;
@@ -157,7 +157,7 @@
     .liste {
         margin-left: 5px;
         overflow: hidden;
-        width: 80%;
+        width: 100%;
     }
     h3 {
         font-size: 19px;
@@ -179,7 +179,7 @@
         height: 65px;
         display: flex;
         align-items: end;
-        transform: translateX(100px);
+        transform: translateX(90px);
         transition: 750ms;
     }
     .prix {
@@ -192,7 +192,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 85px;
+        width: 70px;
         color: white;
         font-size: 25px;
         background-color: $couleurtertiaire;

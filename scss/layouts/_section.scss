@@ -7,7 +7,7 @@ section {
     @media screen and (min-width: map-get($breakpoint, desktop)){
       height: auto;
     }
-    .h_titre {
+    .h_titres {
      @include titleh2;
      @media screen and (min-width: map-get($breakpoints, tablette)){
       margin-bottom: 2px;
