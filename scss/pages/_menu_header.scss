@@ -12,6 +12,7 @@ header {
     }
     i {
         font-size: 25px;
+        color: black;
         @media screen and (min-width: map-get($breakpointmenu, desktop)){
             font-size: 35px;
         }
