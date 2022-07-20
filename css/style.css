@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #nav_btn {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: none;
